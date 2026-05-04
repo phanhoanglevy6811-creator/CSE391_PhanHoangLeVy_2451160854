@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Debug CSS Layout</title>
+    <link rel="stylesheet" href="debug_layout.css">
+</head>
+<body>
+
+<h2>❌ Layout bị vỡ (ban đầu)</h2>
+<div class="container">
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content (bị xuống dòng)</div>
+</div>
+
+<hr>
+
+<h2>✅ Cách 1: Dùng border-box</h2>
+<div class="container fix1">
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content (đã fix)</div>
+</div>
+
+<hr>
+
+<h2>✅ Cách 2: Không dùng border-box (tính lại width)</h2>
+<div class="container fix2">
+    <div class="sidebar">Sidebar</div>
+    <div class="content adjusted">Content (đã fix)</div>
+</div>
+
+</body>
+</html>
