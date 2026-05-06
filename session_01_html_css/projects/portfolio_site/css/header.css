@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-light: #ffffff;
+    --color-primary: #ff0095;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--color-light);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.logo span{
+    color: var(--color-primary);
+}
+nav{
+    display: flex;
+    gap: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.menu-toggle{
+    display: none;
+}
+.menu-toggle:checked ~ nav{
+    display: flex;
+}
+.logo span{
+    color: rgb(135, 82, 234);
+}
+.hero h1 .highlight {
+    color: #e9ff57; 
+}
+body{
+    background: rgb(135, 82, 234);
+}
+.about {
+    background: #ffffff;
+    padding: 80px 0;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+/* ảnh tròn */
+.about-image img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #4a4aff;
+}
+/* nội dung */
+.about-content {
+    max-width: 600px;
+}
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.about-content .main-text {
+    margin-bottom: 15px;
+    color: #555;
+}
+.about-content p {
+    color: #777;
+    line-height: 1.6;
+}

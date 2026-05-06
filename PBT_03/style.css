@@ -1,0 +1,72 @@
+/* 1. Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 3. Header */
+header {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 4. Navigation */
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+/* hover */
+nav a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+/* active */
+nav a.active {
+    color: white;
+    background-color: #007BFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* 5. Table kỹ năng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* header row */
+table th {
+    background-color: #333;
+    color: white;
+}
+
+/* zebra striping */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* hover row */
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* 6. Footer */
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+}

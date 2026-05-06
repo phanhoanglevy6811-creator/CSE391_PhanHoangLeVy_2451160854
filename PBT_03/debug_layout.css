@@ -1,0 +1,33 @@
+/* ===== Layout gốc (bị lỗi) ===== */
+.container {
+    width: 960px;
+    margin: 20px auto;
+    border: 2px solid black;
+    overflow: hidden; /* clear float */
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    background: lightblue;
+}
+
+.content {
+    width: 660px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    float: left;
+    background: lightgreen;
+}
+
+/* ===== Cách 1: border-box ===== */
+.fix1 * {
+    box-sizing: border-box;
+}
+
+/* ===== Cách 2: không dùng border-box ===== */
+.fix2 .adjusted {
+    width: 556px; /* đã tính lại */
+}
