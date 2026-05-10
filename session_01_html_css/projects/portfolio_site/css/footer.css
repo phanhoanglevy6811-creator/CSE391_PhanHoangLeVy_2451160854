@@ -1,0 +1,43 @@
+footer{
+    background: #172554;
+
+    color: white;
+
+    padding: 50px 20px;
+}
+
+.footer-container{
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.socials{
+    display: flex;
+    gap: 20px;
+}
+
+.socials a{
+    color: white;
+    text-decoration: none;
+}
+
+footer hr{
+    border: none;
+
+    height: 1px;
+
+    background: rgba(255,255,255,0.15);
+
+    margin: 40px 0 20px;
+}
