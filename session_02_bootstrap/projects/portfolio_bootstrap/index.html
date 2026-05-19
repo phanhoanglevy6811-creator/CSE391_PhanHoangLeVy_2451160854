@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('Button clicked')">Click me</button>
+    <button id="Clickhere">Click here</button>
+    <button id="Clicknow">Click now</button>
+    <p id="message">Paragraph</p>
+    <p>Paragraph</p>
+    <div id="parent">
+        <p id="child">Child paragraph</p>
+    </div>
+    <script>
+        document.getElementById('Click here').addEventListener('click', function(){
+            alert('Button clicked!');
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
