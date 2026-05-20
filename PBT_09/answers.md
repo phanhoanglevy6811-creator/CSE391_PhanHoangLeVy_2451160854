@@ -56,4 +56,42 @@ document.querySelector("#box").innerHTML =
 document.querySelector("#box").textContent =
     "<h2>Hello</h2>";
 
-### Câu A3 (5đ) — Event Bubbling ###
+## PHẦN C — DEBUG & PHÂN TÍCH (15 điểm)
+### Câu C1 (8đ) — Debug DOM Code
+1. Lỗi:addEventListener("onclick", function() {
+- Sửa:addEventListener("click", function() {
+2. Lỗi:countDisplay = count;
+- Sửa:countDisplay.textContent = count;
+3. Lỗi:countDisplay = count;
+- Sửa:Assignment to constant variable
+4. Lỗi:historyList.innerHTML = null;
+- Sửa:historyList.innerHTML = "";
+5. Lỗi:item.remove;
+- Sửa:item.remove();
+6. Lỗi:count = localStorage.getItem("count");
+- Sửa:historyList.innerHTML =
+    localStorage.getItem("history") || "";
+7. Lỗi:count = localStorage.getItem("count");
+- Sửa:count = Number(localStorage.getItem("count")) || 0;
+8. Lỗi:countDisplay.innerHTML = count;
+- Sửa:countDisplay.textContent = count; 
+
+### Câu C2 (7đ) — Performance
+1. Nếu có 1000 elements:
+- Browser phải tạo 1000 event listeners
+- Tốn memory
+- Tốn CPU khi attach events
+- DOM update chậm hơn
+- Khó maintain code
+- Dynamic elements mới thêm vào sẽ không có event
+2. Khi sử dụng: document.body.appendChild(div);
+trong vòng lặp 1000 lần, mỗi lần thêm element vào DOM, browser phải cập nhật lại giao diện bằng cách tính toán layout (reflow) và vẽ lại (repaint). Việc này xảy ra liên tục nên làm giảm hiệu năng.
+- DocumentFragment giúp giải quyết vấn đề này bằng cách tạo một vùng DOM tạm trong bộ nhớ. Các phần tử sẽ được thêm vào fragment trước mà chưa render ra giao diện, nên không gây reflow hay repaint.
+- Sau khi tạo xong toàn bộ 1000 elements, chỉ cần append fragment vào DOM một lần: const fragment = document.createDocumentFragment();
+for (let i = 0; i < 1000; i++) {
+    const div = document.createElement("div");
+    div.textContent = `Item ${i}`;
+    fragment.appendChild(div);
+}
+document.body.appendChild(fragment);
+- Cách này chỉ gây ra một lần reflow/repaint duy nhất nên nhanh hơn và tối ưu performance hơn nhiều.
