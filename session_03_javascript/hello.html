@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello JavaScript</title>
+</head>
+
+<body>
+    <h1>Bài tập đầu tiên với JavaScript</h1>
+    <p>Mở Console (F12 → Console) để xem kết quả</p>
+
+    <script>
+        // Bài 1: In ra console
+        console.log("Xin chào thế giới!");
+        console.log("Tôi đang học JavaScript");
+        console.log(2026);
+        // 0.3
+        // 1. Tên môn học (string)
+        let tenMonHoc = "Cấu trúc dữ liệu và Giải thuật";
+        console.log(tenMonHoc);
+        // 2. Số tín chỉ (number)
+        let soTinChi = 3;
+        console.log(typeof soTinChi);
+        // 3. Có phải bắt buộc không? (boolean)
+        let batBuoc = true;
+        console.log(typeof batBuoc);
+        // 4. Điểm số (number, chưa có → undefined)
+        let diemSo;
+        console.log(diemSo);
+
+        // 0.4
+        let sanPham = "Laptop";
+        console.log("Sản phẩm", sanPham);
+        let soLuong = 2;
+        console.log("Số lượng", soLuong);
+        let donGia = 15000000;
+        console.log("Đơn giá", donGia);
+        // Tính tổng tiền
+        let tongTien = soLuong * donGia;
+        // Template hóa đơn
+        let hoaDon = (`Hóa đơn: ${soLuong} * ${sanPham} = ${(soLuong*donGia).toLocaleString()}`);
+        console.log(hoaDon);
+
+        // 0.5
+        const PI = 3.14159;
+        let banKinh = 5;
+        console.log("Bán kính:", banKinh);
+        // Tính diện tích hình tròn
+        let dienTich = PI * (banKinh ** 2);
+        console.log("Diện tích=", dienTich);
+        //Tính chu vi hình tròn
+        let chuVi = 2 * PI *banKinh;
+        console.log("Chu vi=", chuVi);
+
+        // 0.6
+        let diem = 7.5;
+        let diemChuyenCan = 9;
+        if(diem >= 5 && diemChuyenCan >= 8){
+            console.log("Đạt");
+        }
+        else{
+            console.log("Không đạt");
+        }
+        if(diem >= 8.5){
+            console.log("Giỏi");
+        }
+        else if( diem >= 7){
+            console.log("Khá");
+        }
+        else if(diem >= 5){
+            console.log("Trung bình");
+        }
+        else{
+            console.log("Yếu");
+        }
+
+        // 0.7
+        let monAn = ["Bún bò", "Hủ tiếu", "Bánh canh", "Bánh cuốn", "Bún riêu"];
+        console.log("Món đầu", monAn[0]);
+        console.log("Món cuối", [monAn.length-1]);
+        monAn.unshift=["Phở"];
+        console.log("Thêm 1 món vào đầu:", monAn);
+        monAn.pop();
+        console.log("Xóa món cuối:", monAn);
+        for(let i = 0; i < monAn.length; i++){
+            console.log(`Món ${i+1}: ${monAn[i]}`)
+        }
+        console.log("Có phở không?", monAn.includes("Phở"));
+
+        // 0.8
+        let hoSo = {
+            hoTen: "Phan Hoàng Lê Vy",
+            tuoi: 20,
+            nganh: "Hệ thống thông tin",
+            soThich: ["Lướt ván", "Đọc sách", "Đua xe"],
+            diaChi: {
+                tinh: "Hà Nội",
+                quan: "Đống Đa",
+                phuong: "Phương Liên",
+            }
+        }
+        // 1. In ra: "Tôi là [hoTen], [tuoi] tuổi, học ngành [nganh]"
+        console.log(`Tôi là ${hoSo.hoten}, ${hoSo.tuoi} tuổi, học ngành ${hoSo.nganh}`);
+        // 2. In ra sở thích đầu tiên
+        console.log("Sở thích đầu tiên:", hoSo.soThich[0]);
+        // 3. In ra địa chỉ đầy đủ
+        console.log(`Địa chỉ: ${hoSo.diaChi.duong}, ${hoSo.diaChi.quan}, ${hoSo.diaChi.tinh}`);
+        // 4. Thêm thuộc tính "email"
+        hoSo.email = "minh@example.com";
+        console.log("Email:", hoSo.email);
+    </script>
+</body>
+
+</html>
