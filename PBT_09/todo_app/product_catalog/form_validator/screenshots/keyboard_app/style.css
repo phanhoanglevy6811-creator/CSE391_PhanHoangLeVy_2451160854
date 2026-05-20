@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #111827;
+    color: white;
+
+    min-height: 100vh;
+
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.shortcut-box {
+    background: #1f2937;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    margin-bottom: 25px;
+}
+
+.shortcut-box ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 80%;
+    max-width: 800px;
+
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.01);
+}
+
+button {
+    padding: 14px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:focus,
+input:focus,
+img:focus {
+    outline: 3px solid #facc15;
+    outline-offset: 4px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.thumbnail {
+    width: 90px;
+    height: 60px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    border: 3px solid transparent;
+}
+
+.thumbnail.active {
+    border-color: #facc15;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.modal-content img {
+    width: 90%;
+    max-width: 1000px;
+
+    border-radius: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.palette-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 120px;
+
+    z-index: 2000;
+}
+
+.palette-box {
+    width: 90%;
+    max-width: 600px;
+
+    background: #1f2937;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+.palette-box input {
+    width: 100%;
+
+    padding: 18px;
+
+    border: none;
+
+    background: #111827;
+    color: white;
+
+    font-size: 18px;
+}
+
+#commandList {
+    list-style: none;
+}
+
+.command-item {
+    padding: 15px 18px;
+
+    border-top: 1px solid #374151;
+
+    cursor: pointer;
+}
+
+.command-item:hover {
+    background: #374151;
+}
