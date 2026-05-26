@@ -54,18 +54,6 @@ Tôi đang học JavaScript
 ```
 
 **Câu hỏi:** `console.log()` khác gì so với `document.write()`?
-**Trả lời**
-1. console.log()
-- Dùng để debug (kiểm tra code)
-- In dữ liệu ra Console của trình duyệt
-- Không ảnh hưởng giao diện web
-- Thường dùng khi lập trình
-
-2. document.write()
-- Dùng để ghi trực tiếp ra trang web (HTML)
-- Ghi nội dung vào trang web
-- Có thể ghi đè toàn bộ trang nếu dùng sau khi trang load xong
-- Hiện nay ít dùng (lỗi thời)
 
 ---
 
