@@ -7,3 +7,28 @@ const students = [
 ];
 
 let original = [...students];
+
+function render(data) {
+    const list = document.getElementById("list");
+    list.innerHTML = "";
+
+    data.forEach(sv => {
+        list.innerHTML += `
+            <tr>
+                <td>${sv.id}</td>
+                <td>${sv.name}</td>
+                <td>${sv.score}</td>
+            </tr>
+        `;
+    });
+
+    renderStats(data);
+}
+
+function renderStats(data) {
+    const avg = data.reduce((s, sv) => s + sv.score, 0) / data.length;
+    document.getElementById("stats").innerText =
+        "Average: " + avg.toFixed(2);
+}
+
+render(students);
