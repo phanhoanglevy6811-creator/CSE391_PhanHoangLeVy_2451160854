@@ -1,5 +1,9 @@
 const students = [
-  { id: "SV001", name: "An", score: 8.5 },
-  { id: "SV002", name: "Bình", score: 7.2 },
-  { id: "SV003", name: "Cường", score: 9.1 }
+    { id: "SV001", name: "An", score: 8.5 },
+    { id: "SV002", name: "Bình", score: 7.2 },
+    { id: "SV003", name: "Cường", score: 9.1 },
+    { id: "SV004", name: "Dũng", score: 5.4 },
+    { id: "SV005", name: "Em", score: 6.8 }
 ];
+
+let original = [...students];
