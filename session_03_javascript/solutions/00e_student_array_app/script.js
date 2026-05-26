@@ -48,3 +48,8 @@ document.getElementById("sortBtn").addEventListener("click", () => {
     const sorted = [...students].sort((a, b) => b.score - a.score);
     render(sorted);
 });
+
+function resetData() {
+    students = [...original];
+    render(students);
+}
