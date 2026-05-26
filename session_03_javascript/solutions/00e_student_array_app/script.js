@@ -43,3 +43,8 @@ document.getElementById("search").addEventListener("input", (e) => {
 
     render(filtered);
 });
+
+document.getElementById("sortBtn").addEventListener("click", () => {
+    const sorted = [...students].sort((a, b) => b.score - a.score);
+    render(sorted);
+});
