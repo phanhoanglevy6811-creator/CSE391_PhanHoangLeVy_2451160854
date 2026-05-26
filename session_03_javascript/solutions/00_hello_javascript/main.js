@@ -84,3 +84,99 @@ if (diem >= 8.5) {
 } else {
     console.log("Yếu");
 }
+// ========================================
+// ARRAY
+// ========================================
+
+let monAn = [
+    "Phở",
+    "Bún chả",
+    "Pizza",
+    "Gà rán",
+    "Hamburger"
+];
+
+console.log(monAn[0]);
+
+console.log(monAn[monAn.length - 1]);
+
+monAn.unshift("Cơm rang");
+
+monAn.pop();
+
+monAn.forEach((mon, index) => {
+    console.log(`Món ${index + 1}: ${mon}`);
+});
+
+console.log(monAn.includes("Phở"));
+
+// ========================================
+// OBJECT
+// ========================================
+
+let hoSo = {
+    hoTen: "Lê Vy",
+
+    tuoi: 18,
+
+    nganh: "Software Engineering",
+
+    soThich: [
+        "Code",
+        "Nghe nhạc",
+        "Xem phim"
+    ],
+
+    diaChi: {
+        tinh: "Hà Nội",
+        quan: "Đống Đa",
+        duong: "Tôn Thất Tùng"
+    }
+};
+
+console.log(
+    `Tôi là ${hoSo.hoTen}, ${hoSo.tuoi} tuổi, học ngành ${hoSo.nganh}`
+);
+
+console.log(hoSo.soThich[0]);
+
+console.log(
+    `${hoSo.diaChi.duong}, ${hoSo.diaChi.quan}, ${hoSo.diaChi.tinh}`
+);
+
+hoSo.email = "vy@gmail.com";
+
+console.log(hoSo);
+
+// ========================================
+// FUNCTION
+// ========================================
+
+function maxHaiSo(a, b) {
+    return a > b ? a : b;
+}
+
+function laNamNhuan(nam) {
+    return (
+        (nam % 4 === 0 && nam % 100 !== 0)
+        || nam % 400 === 0
+    );
+}
+
+function gioiThieu(hoTen, tuoi, nganh) {
+    return `Tôi là ${hoTen}, ${tuoi} tuổi, học ${nganh}`;
+}
+
+function tinhGiaBan(giaGoc, giamGia = 0) {
+    return giaGoc - (giaGoc * giamGia) / 100;
+}
+
+console.log(maxHaiSo(10, 20));
+
+console.log(laNamNhuan(2024));
+
+console.log(
+    gioiThieu("Vy", 18, "Software Engineering")
+);
+
+console.log(tinhGiaBan(1000000, 20));
