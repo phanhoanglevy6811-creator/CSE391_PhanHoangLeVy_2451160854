@@ -32,3 +32,14 @@ function renderStats(data) {
 }
 
 render(students);
+
+document.getElementById("search").addEventListener("input", (e) => {
+    const keyword = e.target.value.toLowerCase();
+
+    const filtered = students.filter(sv =>
+        sv.name.toLowerCase().includes(keyword) ||
+        sv.id.toLowerCase().includes(keyword)
+    );
+
+    render(filtered);
+});
