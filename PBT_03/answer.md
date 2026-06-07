@@ -58,3 +58,6 @@ Giải thích: Inline style (style="") có mức specificity là 1000+, cao hơn
 4. Nếu Rule A thêm !important, element có màu gì? Tại sao?
 Màu: Black (Đen)
 Giải thích: Cờ !important mang điểm specificity vô hạn. Bất kể ID hay inline style, nếu một property được đánh dấu !important, nó sẽ phá vỡ "thác nước cascade" (cascade priority) và đè lên mọi thứ khác
+
+## Phần D
+Link google drive: https://drive.google.com/file/d/1s1IaNQThNvXjgrQrmIg0Z0ZlrqfP-IGb/view?usp=drive_link
