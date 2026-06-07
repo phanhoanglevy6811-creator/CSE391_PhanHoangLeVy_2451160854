@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Components</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6 text-gray-800">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-white shadow-md rounded-xl p-4 flex justify-between items-center mb-8">
+
+        <h1 class="text-2xl font-bold text-blue-600">
+            Components UI
+        </h1>
+
+        <ul class="flex gap-6 font-medium">
+            <li><a href="#" class="hover:text-blue-500 transition">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500 transition">Products</a></li>
+            <li><a href="#" class="hover:text-blue-500 transition">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="flex gap-6">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="w-64 bg-white rounded-xl shadow-md p-5 h-fit">
+
+            <h2 class="text-xl font-semibold mb-4">
+                Sidebar
+            </h2>
+
+            <ul class="space-y-3">
+                <li>
+                    <a href="#" class="block px-4 py-2 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition">
+                        Orders
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition">
+                        Users
+                    </a>
+                </li>
+            </ul>
+
+        </aside>
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <main class="flex-1 space-y-10">
+
+            <!-- ================= BUTTONS ================= -->
+            <section class="bg-white p-6 rounded-xl shadow-md">
+
+                <h2 class="text-2xl font-bold mb-6">
+                    Buttons
+                </h2>
+
+                <div class="flex flex-wrap gap-4 items-center">
+
+                    <!-- Primary -->
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition focus:ring-4 focus:ring-blue-300">
+                        Primary
+                    </button>
+
+                    <!-- Secondary -->
+                    <button class="bg-gray-500 hover:bg-gray-600 text-white px-5 py-2 rounded-lg transition focus:ring-4 focus:ring-gray-300">
+                        Secondary
+                    </button>
+
+                    <!-- Outline -->
+                    <button class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-5 py-2 rounded-lg transition focus:ring-4 focus:ring-blue-200">
+                        Outline
+                    </button>
+
+                    <!-- Disabled -->
+                    <button disabled class="bg-gray-300 text-gray-500 px-5 py-2 rounded-lg cursor-not-allowed">
+                        Disabled
+                    </button>
+
+                    <!-- Loading -->
+                    <button class="bg-green-500 text-white px-5 py-2 rounded-lg flex items-center gap-2 hover:bg-green-600 transition">
+
+                        <svg class="w-5 h-5 animate-spin"
+                             fill="none"
+                             viewBox="0 0 24 24">
+
+                            <circle class="opacity-25"
+                                    cx="12"
+                                    cy="12"
+                                    r="10"
+                                    stroke="currentColor"
+                                    stroke-width="4"></circle>
+
+                            <path class="opacity-75"
+                                  fill="currentColor"
+                                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                        </svg>
+
+                        Loading
+                    </button>
+
+                    <!-- Sizes -->
+                    <button class="bg-purple-500 text-white px-3 py-1 rounded-lg text-sm hover:bg-purple-600 transition">
+                        Small
+                    </button>
+
+                    <button class="bg-purple-500 text-white px-5 py-2 rounded-lg hover:bg-purple-600 transition">
+                        Medium
+                    </button>
+
+                    <button class="bg-purple-500 text-white px-7 py-3 rounded-lg text-lg hover:bg-purple-600 transition">
+                        Large
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- ================= CARDS ================= -->
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Product Card -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+
+                    <img src="https://picsum.photos/300/200?1"
+                         class="w-full h-48 object-cover">
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-semibold mb-2">
+                            Product Card
+                        </h3>
+
+                        <p class="text-gray-500 mb-4">
+                            Modern product design.
+                        </p>
+
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">
+                            Buy Now
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- Profile Card -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 text-center">
+
+                    <img src="https://picsum.photos/120"
+                         class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+
+                    <h3 class="text-xl font-bold">
+                        Nguyễn Văn A
+                    </h3>
+
+                    <p class="text-gray-500 mb-4">
+                        Frontend Developer
+                    </p>
+
+                    <button class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-lg transition">
+                        Follow
+                    </button>
+
+                </div>
+
+                <!-- Pricing Card -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 text-center">
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Premium
+                    </h3>
+
+                    <p class="text-4xl font-bold text-blue-500 mb-4">
+                        $29
+                    </p>
+
+                    <ul class="space-y-2 text-gray-500 mb-6">
+                        <li>Unlimited Access</li>
+                        <li>Priority Support</li>
+                        <li>Cloud Storage</li>
+                    </ul>
+
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+                        Subscribe
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- ================= FORMS ================= -->
+            <section class="bg-white p-6 rounded-xl shadow-md">
+
+                <h2 class="text-2xl font-bold mb-6">
+                    Forms
+                </h2>
+
+                <div class="space-y-5">
+
+                    <!-- Input -->
+                    <div>
+                        <label class="block mb-2 font-medium">
+                            Full Name
+                        </label>
+
+                        <input type="text"
+                               placeholder="Enter your name"
+                               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500">
+                    </div>
+
+                    <!-- Select -->
+                    <div>
+                        <label class="block mb-2 font-medium">
+                            Country
+                        </label>
+
+                        <select class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500">
+
+                            <option>Vietnam</option>
+                            <option>Japan</option>
+                            <option>Korea</option>
+
+                        </select>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div>
+                        <label class="block mb-2 font-medium">
+                            Message
+                        </label>
+
+                        <textarea rows="4"
+                                  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500"></textarea>
+                    </div>
+
+                    <!-- Checkbox Group -->
+                    <div>
+                        <label class="block mb-2 font-medium">
+                            Skills
+                        </label>
+
+                        <div class="flex gap-6">
+
+                            <label class="flex items-center gap-2">
+                                <input type="checkbox"
+                                       class="w-4 h-4 text-blue-500 focus:ring-blue-300">
+                                HTML
+                            </label>
+
+                            <label class="flex items-center gap-2">
+                                <input type="checkbox"
+                                       class="w-4 h-4 text-blue-500 focus:ring-blue-300">
+                                CSS
+                            </label>
+
+                            <label class="flex items-center gap-2">
+                                <input type="checkbox"
+                                       class="w-4 h-4 text-blue-500 focus:ring-blue-300">
+                                JavaScript
+                            </label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ================= ALERTS ================= -->
+            <section class="space-y-4">
+
+                <!-- Success -->
+                <div class="bg-green-100 text-green-700 px-5 py-4 rounded-xl flex justify-between items-center shadow-md">
+
+                    <span>Success alert message.</span>
+
+                    <button class="hover:text-black transition">
+                        ✕
+                    </button>
+
+                </div>
+
+                <!-- Error -->
+                <div class="bg-red-100 text-red-700 px-5 py-4 rounded-xl flex justify-between items-center shadow-md">
+
+                    <span>Error alert message.</span>
+
+                    <button class="hover:text-black transition">
+                        ✕
+                    </button>
+
+                </div>
+
+                <!-- Warning -->
+                <div class="bg-yellow-100 text-yellow-700 px-5 py-4 rounded-xl flex justify-between items-center shadow-md">
+
+                    <span>Warning alert message.</span>
+
+                    <button class="hover:text-black transition">
+                        ✕
+                    </button>
+
+                </div>
+
+                <!-- Info -->
+                <div class="bg-blue-100 text-blue-700 px-5 py-4 rounded-xl flex justify-between items-center shadow-md">
+
+                    <span>Info alert message.</span>
+
+                    <button class="hover:text-black transition">
+                        ✕
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

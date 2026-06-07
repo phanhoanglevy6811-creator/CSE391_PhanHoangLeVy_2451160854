@@ -57,6 +57,7 @@ Màu: Orange (Cam)
 Giải thích: Inline style (style="") có mức specificity là 1000+, cao hơn cả ID selector (100) nên nó sẽ ghi đè Rule C
 4. Nếu Rule A thêm !important, element có màu gì? Tại sao?
 Màu: Black (Đen)
+<<<<<<< HEAD
 Giải thích: Cờ !important mang điểm specificity vô hạn. Bất kể ID hay inline style, nếu một property được đánh dấu !important, nó sẽ phá vỡ "thác nước cascade" (cascade priority) và đè lên mọi thứ khác
 
 ## Phần D

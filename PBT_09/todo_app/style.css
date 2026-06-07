@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+
+    background: white;
+    border-radius: 16px;
+
+    padding: 25px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#todoForm {
+    display: flex;
+    gap: 10px;
+}
+
+#todoInput {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 2px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+#todoInput:focus {
+    border-color: #6c63ff;
+}
+
+#todoForm button {
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #6c63ff;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#todoForm button:hover {
+    background: #5548e5;
+}
+
+.filters {
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background: #eee;
+
+    transition: 0.3s;
+}
+
+.filter-btn.active {
+    background: #6c63ff;
+    color: white;
+}
+
+#todoList {
+    list-style: none;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #f7f7f7;
+
+    padding: 12px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+}
+
+.todo-text {
+    flex: 1;
+    cursor: pointer;
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.delete-btn {
+    background: crimson;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 6px 10px;
+
+    cursor: pointer;
+}
+
+.edit-input {
+    flex: 1;
+
+    padding: 8px;
+
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+.footer {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#clearCompleted {
+    border: none;
+
+    background: #ff9800;
+    color: white;
+
+    padding: 10px 14px;
+    border-radius: 8px;
+
+    cursor: pointer;
+}

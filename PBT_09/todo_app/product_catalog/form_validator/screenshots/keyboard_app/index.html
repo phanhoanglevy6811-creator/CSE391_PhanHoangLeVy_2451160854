@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Keyboard Accessibility App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Keyboard Gallery App</h1>
+
+        <!-- SHORTCUT INFO -->
+        <div class="shortcut-box">
+
+            <h2>Keyboard Shortcuts</h2>
+
+            <ul>
+                <li>← → : Previous / Next image</li>
+                <li>1-9 : Jump to image</li>
+                <li>Space : Play / Pause slideshow</li>
+                <li>Esc : Close modal</li>
+                <li>Ctrl + K : Open command palette</li>
+            </ul>
+
+        </div>
+
+
+        <!-- GALLERY -->
+        <div class="gallery">
+
+            <button
+                id="prevBtn"
+                aria-label="Previous image"
+            >
+                ←
+            </button>
+
+            <img
+                id="mainImage"
+                src="https://placehold.co/900x500?text=Image+1"
+                alt="Gallery image"
+                tabindex="0"
+            >
+
+            <button
+                id="nextBtn"
+                aria-label="Next image"
+            >
+                →
+            </button>
+
+        </div>
+
+
+        <!-- THUMBNAILS -->
+        <div class="thumbnails"
+             id="thumbnails">
+        </div>
+
+
+        <!-- MODAL -->
+        <div id="imageModal"
+             class="modal hidden">
+
+            <div class="modal-content">
+
+                <img
+                    id="modalImage"
+                    src=""
+                    alt="Large preview"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- COMMAND PALETTE -->
+        <div id="commandPalette"
+             class="palette-overlay hidden">
+
+            <div class="palette-box">
+
+                <input
+                    type="text"
+                    id="commandInput"
+                    placeholder="Type a command..."
+                    aria-label="Command input"
+                >
+
+                <ul id="commandList"></ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

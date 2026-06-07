@@ -1,0 +1,192 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+}
+
+/* MOBILE FIRST */
+
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    background:#222;
+    color:white;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.hamburger{
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* HIDE NAV ON MOBILE */
+.nav{
+    display:none;
+}
+
+/* LAYOUT */
+.layout{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+    padding:20px;
+}
+
+/* SIDEBAR HIDDEN MOBILE */
+.sidebar{
+    display:none;
+}
+
+/* ADS HIDDEN MOBILE */
+.ads{
+    display:none;
+}
+
+/* PRODUCT GRID */
+.products{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+/* PRODUCT CARD */
+.product-card{
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+}
+
+.product-card img{
+    max-width:100%;
+    height:auto;
+    border-radius:8px;
+}
+
+.product-card h3{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.product-card p{
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+.product-card button{
+    padding:10px 15px;
+    border:none;
+    background:#222;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+.footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* ================= TABLET ================= */
+@media (min-width:768px){
+
+    body{
+        font-size:17px;
+    }
+
+    /* SHOW SIDEBAR */
+    .sidebar{
+        display:flex;
+        gap:15px;
+        align-items:center;
+        background:white;
+        padding:15px;
+        border-radius:10px;
+    }
+
+    .sidebar h3{
+        margin-right:10px;
+    }
+
+    /* PRODUCT GRID 2 COLUMNS */
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .product-card h3{
+        font-size:20px;
+    }
+
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width:1024px){
+
+    body{
+        font-size:18px;
+    }
+
+    /* SHOW NAV */
+    .hamburger{
+        display:none;
+    }
+
+    .nav{
+        display:flex;
+        gap:20px;
+    }
+
+    .nav a{
+        text-decoration:none;
+        color:white;
+        font-weight:bold;
+    }
+
+    /* MAIN LAYOUT */
+    .layout{
+        grid-template-columns:220px 1fr 180px;
+        align-items:start;
+    }
+
+    /* SIDEBAR */
+    .sidebar{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    /* PRODUCT GRID 4 COLUMNS */
+    .products{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    /* SHOW ADS */
+    .ads{
+        display:block;
+        background:white;
+        padding:20px;
+        border-radius:10px;
+    }
+
+    .product-card h3{
+        font-size:22px;
+    }
+
+}
