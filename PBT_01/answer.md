@@ -99,6 +99,7 @@ Câu 3. Không tìm thấy thẻ <form> trên trang Tiki.com
         <nav> <!-- nav: điều hướng chính -->
         </nav>
     </header>
+    
     <nav aria-label="breadcrumb"> <!-- nav: điều hướng phụ breadcrumb -->
         <ol> <!-- ol: vì breadcrumb có thứ tự -->
             <li><a href="#"></a></li> <!-- li: từng cấp điều hướng -->
@@ -150,3 +151,17 @@ Câu 3. Không tìm thấy thẻ <form> trên trang Tiki.com
     </footer>
 </body>
 </html>
+```
+# Câu C2
+Tôi không đồng ý với ý kiến rằng chỉ cần dùng `<div>` cho mọi thứ rồi thêm class là đủ. Semantic HTML mang lại nhiều lợi ích kỹ thuật quan trọng mà `<div>` không thể thay thế hoàn toàn.
+
+Thứ nhất, semantic HTML hỗ trợ SEO (Search Engine Optimization). Các công cụ tìm kiếm như Google có thể hiểu cấu trúc và ý nghĩa của nội dung tốt hơn khi sử dụng các thẻ như `<header>`, `<nav>`, `<main>`, `<article>` hay `<footer>`. Điều này giúp trang web được lập chỉ mục chính xác hơn và có khả năng đạt thứ hạng tìm kiếm tốt hơn.
+
+Thứ hai, semantic HTML cải thiện Accessibility (khả năng truy cập). Các công nghệ hỗ trợ như screen reader có thể nhận biết các khu vực chức năng của trang web thông qua các thẻ semantic. Nhờ đó, người khiếm thị hoặc người gặp khó khăn trong việc sử dụng máy tính có thể điều hướng trang dễ dàng hơn.
+
+Ví dụ, trên một trang tin tức, việc sử dụng `<article>` cho mỗi bài báo giúp cả công cụ tìm kiếm và screen reader hiểu rằng đó là một nội dung độc lập. Nếu chỉ dùng `<div>`, hệ thống sẽ không biết được ý nghĩa thực sự của phần nội dung đó.
+
+Tuy nhiên, điều này không có nghĩa là `<div>` không còn cần thiết. Trong thực tế, `<div>` vẫn rất phù hợp để tạo các khối bố cục hoặc nhóm các phần tử phục vụ mục đích CSS và JavaScript khi không có thẻ semantic nào diễn tả đúng ý nghĩa của nội dung. Vì vậy, giải pháp tốt nhất là kết hợp semantic HTML với `<div>` một cách hợp lý thay vì chỉ sử dụng `<div>` cho toàn bộ trang web.
+
+### Phần D
+Link google drive: https://drive.google.com/file/d/1GP8ttbwkhmUhedvps1PFjT3ATioOh4G_/view?usp=drive_link
