@@ -95,3 +95,6 @@ for (let i = 0; i < 1000; i++) {
 }
 document.body.appendChild(fragment);
 - Cách này chỉ gây ra một lần reflow/repaint duy nhất nên nhanh hơn và tối ưu performance hơn nhiều.
+
+## Phần D:
+Link google drive: https://drive.google.com/file/d/1QI9ZaszYzvhSAeVTgs9QLduy6DfEc7_V/view?usp=drive_link
