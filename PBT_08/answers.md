@@ -203,3 +203,6 @@ console.log(
     )
 );
 // → 10
+
+## Phần D:
+Link google drive: https://drive.google.com/file/d/1VBv3KkfjJF1Mhx2esFH09HC7Ycfj9p_j/view?usp=drive_link
