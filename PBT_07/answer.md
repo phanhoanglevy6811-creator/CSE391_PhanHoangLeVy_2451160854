@@ -74,4 +74,4 @@ var html = `
 8. Kết quả in tiền không đẹp
 
 ## Phần D: 
-Link google drive: ttps://drive.google.com/file/d/1oXNrwaVxEQZMce-XDouJQXzvVmj9KGfb/view?usp=drive_link
+Link google drive: https://drive.google.com/file/d/1oXNrwaVxEQZMce-XDouJQXzvVmj9KGfb/view?usp=drive_link
