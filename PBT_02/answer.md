@@ -114,3 +114,6 @@ Xác thực tính duy nhất/Dữ liệu thực tế (Asynchronous Validation): 
 Backend Validation (kiểm tra trên máy chủ) là chốt chặn cuối cùng và quan trọng nhất. Nếu chỉ tin tưởng vào Frontend, ngân hàng số sẽ gặp các rủi ro chí mạng sau:
 Lỗ hổng Injection (SQL Injection, XSS): Hacker có thể bypass Frontend và gửi thẳng các đoạn mã độc (như câu lệnh SQL hoặc JavaScript độc hại) vào các trường dữ liệu (ví dụ như "Tên tài khoản"). Nếu Backend không quét và làm sạch (sanitize) dữ liệu này mà lưu thẳng vào Database, hệ thống có thể bị đánh cắp toàn bộ cơ sở dữ liệu khách hàng.
 Làm hỏng tính toàn vẹn dữ liệu (Data Corruption) và trục lợi logic: Kẻ tấn công có thể sửa đổi dữ liệu gửi lên trái với nghiệp vụ. Ví dụ: Bỏ qua validation số lượng để nhập số lượng chuyển tiền là số âm (-10000), hoặc sửa ID của giỏ hàng/tài khoản thụ hưởng để thực hiện các giao dịch không hợp lệ, dẫn đến sai lệch hệ thống lõi của ngân hàng.
+
+## Phần D
+Link google drive: https://drive.google.com/file/d/1e07Rp3qJVTX0sLimHDqpKOw9nxwOxmfO/view?usp=drive_link
