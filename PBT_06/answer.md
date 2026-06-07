@@ -168,3 +168,6 @@ Mặc dù HTML Tailwind thường rất dài do chứa nhiều utility classes, 
 - Chỉ generate utility classes thực sự được sử dụng trong project.
 - CSS cuối cùng chỉ chứa các class đang dùng.
 - Ví dụ:```html bg-blue-500 p-4 rounded-lg
+
+## Phần D:
+Link google drive: https://drive.google.com/file/d/1Q0UpLfoNTImF2eIznr7ymsfgn4r2r4NU/view?usp=drive_link
